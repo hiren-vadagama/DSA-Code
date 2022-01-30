@@ -7,17 +7,17 @@ public class MakeChangeProblem {
 		int sum=9;
 		int arr[] = {3, 34, 4, 12, 5, 2};
 		for(int i=0; i<N; i++)
-        {
-            for(int j=0; j<N-1-i; j++)
-            {
-                if(arr[j]>arr[j+1])
-                {
-                    int t=arr[j+1];
-                    arr[j+1]=arr[j];
-                    arr[j]=t;
-                }
-            }
-        }
+        	{
+		    for(int j=0; j<N-1-i; j++)
+		    {
+			if(arr[j]>arr[j+1])
+			{
+			    int t=arr[j+1];
+			    arr[j+1]=arr[j];
+			    arr[j]=t;
+			}
+		    }
+        	}
 
 		int table[][]=new int[arr.length+1][sum+1];
 		for(int i=0; i<=arr.length; i++)
