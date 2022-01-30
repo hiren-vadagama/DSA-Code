@@ -6,8 +6,7 @@ class SubsetDivByM {
 	
 	// Returns true if there is a subset
 	// of arr[] with sum divisible by m
-	static boolean modularSum(int arr[],
-								int n, int m)
+	static boolean modularSum(int arr[], int n, int m)
 	{
 		if (n > m)
 			return true;
