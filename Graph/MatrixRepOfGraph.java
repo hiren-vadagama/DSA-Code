@@ -1,0 +1,42 @@
+package GraphPro;
+
+import java.util.Scanner;
+
+public class MatrixRepOfGraph {
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		int v=sc.nextInt();
+		int e=sc.nextInt();
+		int matrix[][]=new int[v][v];
+		for(int i=0; i<v; i++)
+		{
+			for(int j=0; j<v; j++)
+			{
+				matrix[i][j]=0;
+			}	
+		}
+		Graph g[]=new Graph[v];
+		for(int i=0; i<g.length; i++)
+		{
+			g[i]=new Graph(i);
+		}
+		for(int i=0; i<e; i++)
+		{
+			System.out.print("Enter Vertex");
+			int tempV=sc.nextInt();
+			System.out.print("Enter Edge");
+			int tempE=sc.nextInt();
+			g[tempV].e.add(tempE);
+			matrix[tempV][tempE]=1;
+		}
+		for(int i=0; i<v; i++)
+		{
+			for(int j=0; j<v; j++)
+			{
+				System.out.print(matrix[i][j]+" ");
+			}	
+			System.out.println();
+		}
+	}
+}
