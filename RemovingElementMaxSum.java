@@ -4,8 +4,7 @@ class RemovingElementMaxSum {
 	
 	// Method returns maximum sum of all subarray where
 	// removing one element is also allowed
-	static int maxSumSubarrayRemovingOneEle(int arr[],
-												int n)
+	static int maxSumSubarrayRemovingOneEle(int arr[],int n)
 	{
 		
 		// Maximum sum subarrays in forward and
@@ -80,8 +79,7 @@ class RemovingElementMaxSum {
 		int arr[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
 		int n = arr.length;
 		
-		System.out.print(maxSumSubarrayRemovingOneEle(
-											arr, n));
+		System.out.print(maxSumSubarrayRemovingOneEle(arr, n));
 	}
 }
 
