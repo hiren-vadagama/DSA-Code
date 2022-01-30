@@ -10,8 +10,7 @@ class Gold_Mine_Problem {
 	// can be collected when journey started
 	// from first column and moves allowed
 	// are right, right-up and right-down
-	static int getMaxGold(int gold[][],
-							int m, int n)
+	static int getMaxGold(int gold[][], int m, int n)
 	{
 		
 		// Create a table for storing
@@ -50,8 +49,7 @@ class Gold_Mine_Problem {
 				// Max gold collected from taking
 				// either of the above 3 paths
 				goldTable[row][col] = gold[row][col]
-				+ Math.max(right, Math.max(right_up,
-									right_down));
+				+ Math.max(right, Math.max(right_up,right_down));
 														
 			}
 		}
@@ -80,9 +78,9 @@ class Gold_Mine_Problem {
 	public static void main(String arg[])
 	{
 		int gold[][]= { {1, 3, 1, 5},
-						{2, 2, 4, 1},
-						{5, 0, 2, 3},
-						{0, 6, 1, 2} };
+			        {2, 2, 4, 1},
+	  		        {5, 0, 2, 3},
+				{0, 6, 1, 2} };
 						
 		int m = 4, n = 4;
 		
